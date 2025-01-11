@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ETA-TRADE/static/css/main.6a9166e8.css",
+    "main.js": "/ETA-TRADE/static/js/main.44c8e838.js",
+    "static/js/488.273886f3.chunk.js": "/ETA-TRADE/static/js/488.273886f3.chunk.js",
+    "index.html": "/ETA-TRADE/index.html",
+    "main.6a9166e8.css.map": "/ETA-TRADE/static/css/main.6a9166e8.css.map",
+    "main.44c8e838.js.map": "/ETA-TRADE/static/js/main.44c8e838.js.map",
+    "488.273886f3.chunk.js.map": "/ETA-TRADE/static/js/488.273886f3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a9166e8.css",
+    "static/js/main.44c8e838.js"
+  ]
+}
