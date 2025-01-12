@@ -24,11 +24,12 @@ export default function Header() {
         {/* Video Arka Plan */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/EtaHeaderVideo.mp4"
+          src={`${process.env.PUBLIC_URL}/EtaHeaderVideo.mp4`}
           autoPlay
           loop
           muted
         ></video>
+
         {/* Transparan Siyah Katman */}
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
@@ -37,7 +38,7 @@ export default function Header() {
           {/* Logo */}
           <div className="md:text-left text-center">
             <img
-              src="/EtaLogo.png"
+              src={`${process.env.PUBLIC_URL}/EtaLogo.png`}
               alt="Eta Logo"
               className="h-12 md:h-16 inline-block"
             />

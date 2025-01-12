@@ -9,7 +9,7 @@ export default function Projects() {
         {/* Video Arka Plan */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
-          src="/EtaHeaderVideo.mp4"
+          src={`${process.env.PUBLIC_URL}/EtaHeaderVideo.mp4`}
           autoPlay
           loop
           muted
@@ -22,7 +22,7 @@ export default function Projects() {
           {/* Logo */}
           <div className="md:text-left text-center">
             <img
-              src="/EtaLogo.png"
+              src={`${process.env.PUBLIC_URL}/EtaLogo.png`}
               alt="Eta Logo"
               className="h-12 md:h-16 inline-block"
             />
@@ -99,7 +99,7 @@ export default function Projects() {
       {/* Ürün Kartları */}
       <div className="bg-gray-100 shadow-md p-6 rounded-lg">
         <img
-          src="/product1.webp"
+          src={`${process.env.PUBLIC_URL}/product1.webp`}
           alt="Product 1"
           className="w-full h-48 object-cover rounded-md mb-4"
         />
@@ -108,7 +108,7 @@ export default function Projects() {
 
       <div className="bg-gray-100 shadow-md p-6 rounded-lg">
         <img
-          src="/product2.jpg"
+          src={`${process.env.PUBLIC_URL}/product2.jpg`}
           alt="Product 2"
           className="w-full h-48 object-cover rounded-md mb-4"
         />
@@ -117,7 +117,7 @@ export default function Projects() {
 
       <div className="bg-gray-100 shadow-md p-6 rounded-lg">
         <img
-          src="/product3.webp"
+          src={`${process.env.PUBLIC_URL}/product3.webp`}
           alt="Product 3"
           className="w-full h-48 object-cover rounded-md mb-4"
         />
@@ -127,7 +127,7 @@ export default function Projects() {
       {/* Aynı ürünlerin tekrar yazımı */}
       <div className="bg-gray-100 shadow-md p-6 rounded-lg">
         <img
-          src="/product1.webp"
+          src={`${process.env.PUBLIC_URL}/product1.webp`}
           alt="Product 1"
           className="w-full h-48 object-cover rounded-md mb-4"
         />
@@ -136,7 +136,7 @@ export default function Projects() {
 
       <div className="bg-gray-100 shadow-md p-6 rounded-lg">
         <img
-          src="/product2.jpg"
+          src={`${process.env.PUBLIC_URL}/product2.jpg`}
           alt="Product 2"
           className="w-full h-48 object-cover rounded-md mb-4"
         />
@@ -145,7 +145,7 @@ export default function Projects() {
 
       <div className="bg-gray-100 shadow-md p-6 rounded-lg">
         <img
-          src="/product3.webp"
+          src={`${process.env.PUBLIC_URL}/product3.webp`}
           alt="Product 3"
           className="w-full h-48 object-cover rounded-md mb-4"
         />
