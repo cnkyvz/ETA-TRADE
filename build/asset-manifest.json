@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ETA-TRADE/static/css/main.6a9166e8.css",
-    "main.js": "/ETA-TRADE/static/js/main.15416993.js",
-    "static/js/488.273886f3.chunk.js": "/ETA-TRADE/static/js/488.273886f3.chunk.js",
-    "index.html": "/ETA-TRADE/index.html",
-    "main.6a9166e8.css.map": "/ETA-TRADE/static/css/main.6a9166e8.css.map",
-    "main.15416993.js.map": "/ETA-TRADE/static/js/main.15416993.js.map",
-    "488.273886f3.chunk.js.map": "/ETA-TRADE/static/js/488.273886f3.chunk.js.map"
+    "main.css": "/static/css/main.6a9166e8.css",
+    "main.js": "/static/js/main.dc0d44cc.js",
+    "static/js/488.273886f3.chunk.js": "/static/js/488.273886f3.chunk.js",
+    "index.html": "/index.html",
+    "main.6a9166e8.css.map": "/static/css/main.6a9166e8.css.map",
+    "main.dc0d44cc.js.map": "/static/js/main.dc0d44cc.js.map",
+    "488.273886f3.chunk.js.map": "/static/js/488.273886f3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6a9166e8.css",
-    "static/js/main.15416993.js"
+    "static/js/main.dc0d44cc.js"
   ]
 }
