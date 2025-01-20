@@ -1,17 +1,32 @@
 {
   "header": {
-    "about": "HAKKIMIZDA",
+    "home": "ANA SAYFA",
     "services": "HİZMETLER",
     "projects": "PROJELER",
-    "connect": "İLETİŞİM"
-  },
-  "section": {
-    "title": "ORTA YÜKSEK / YÜKSEK KATLI KONUTLAR",
-    "subtitle": "RINOMATO CONSTRUCTION, ORTA VE YÜKSEK..."
-  },
-  "footer": {
+    "connect": "İLETİŞİM",
+    "description1": "20 yıldır bu sektördeyiz.",
+    "description2": "Ürünlerimizi Avrupa ve Orta Doğu'ya ihraç ediyoruz.",
     "follow": "TAKİP EDİN",
-    "headquarters": "MERKEZ",
-    "years": "50+ YILLIK BAŞARI"
+    "headquarters": "MERKEZ OFİS",
+    "successTitle": "10+ YILLIK BAŞARI",
+    "successDescription": "ORTA DOĞU VE AVRUPA'DAKİ TÜM ÜRÜNLERİN ÖNDE GELEN TEDARİKÇİLERİNDEN BİRİ."
+  },
+
+  "projects": {
+    "title": "ÜRÜN KATEGORİLERİ",
+    "categories": "Ürün Kategorileri",
+    "error": "Veriler alınırken bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+  },
+
+  "subcategories":{
+    "title": "ALT KATEGORİLER",
+    "error": "Alt kategoriler alınırken bir hata oluştu. Lütfen tekrar deneyin."
+  },
+
+  "products": {
+    "title": "ÜRÜNLER",
+    "error": "Ürünler alınırken bir hata oluştu. Lütfen tekrar deneyin.",
+    "noImage": "Görsel Yok",
+    "noName": "İsim Yok"
   }
 }

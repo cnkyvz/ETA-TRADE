@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^16.0.1",
     "ajv": "^8.17.1",
     "ajv-keywords": "^5.1.0",
     "autoprefixer": "^10.4.20",
+    "contentful": "^11.4.3",
     "cra-template": "1.2.0",
     "i18next": "^24.2.1",
     "i18next-browser-languagedetector": "^8.0.2",

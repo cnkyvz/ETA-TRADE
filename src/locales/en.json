@@ -1,17 +1,32 @@
 {
   "header": {
-    "about": "ABOUT",
+    "home": "HOME",
     "services": "SERVICES",
     "projects": "PROJECTS",
-    "connect": "CONNECT"
-  },
-  "section": {
-    "title": "MID-RISE / HIGH-RISE RESIDENTIAL",
-    "subtitle": "RINOMATO CONSTRUCTION IS THRILLED TO ANNOUNCE..."
-  },
-  "footer": {
+    "connect": "CONNECT",
+    "description1": "We have been in this industry for 20 years.",
+    "description2": "We export products to Europe and the Middle East.",
     "follow": "FOLLOW",
     "headquarters": "HEADQUARTERS",
-    "years": "50+ YEARS OF SUCCESS"
+    "successTitle": "10+ YEARS OF SUCCESS",
+    "successDescription": "ONE OF THE LEADING SUPPLIERS OF ALL PRODUCTS IN THE MIDDLE EAST AND EUROPE."
+  },
+  
+  "projects": {
+    "title": "PRODUCT CATEGORIES",
+    "categories": "Product Categories",
+    "error": "Failed to fetch data. Please try again later."
+  },
+
+  "subcategories":{
+    "title": "SUB CATEGORIES",
+    "error": "Failed to fetch subcategories. Please try again."
+  },
+
+  "products": {
+    "title": "PRODUCTS",
+    "error": "Failed to fetch products. Please try again.",
+    "noImage": "No Image",
+    "noName": "No Name"
   }
 }
