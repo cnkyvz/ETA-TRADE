@@ -174,7 +174,9 @@ export default function Projects() {
               <div
                 key={category.sys.id}
                 className="bg-gray-100 shadow-md p-6 rounded-lg cursor-pointer"
-                onClick={() => navigate(`/${lang}/sub-category/${category.sys.id}`)}
+                /*main sub tıklama*/
+                /* onClick={() => navigate(`/${lang}/sub-category/${category.sys.id}`)} */
+
               >
                 <img
                   src={category.fields.main_category_image.fields.file.url}
