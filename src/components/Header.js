@@ -31,6 +31,7 @@ export default function Header() {
           muted
         ></video>
 
+
         {/* Transparan Siyah Katman */}
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
