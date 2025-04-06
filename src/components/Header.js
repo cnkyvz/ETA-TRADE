@@ -37,13 +37,15 @@ export default function Header() {
         {/* Header İçerik */}
         <nav className="absolute top-0 left-0 right-0 z-20 flex justify-between items-center px-6 py-4 md:px-10 bg-black bg-opacity-60">
           {/* Logo */}
-          <div className="md:text-left text-center h-16 overflow-hidden flex items-center">
+          <div className="text-left h-16 flex items-center">
             <img
               src={`${process.env.PUBLIC_URL}/Mediamodifier-Design-Template.png`}
               alt="Eta Logo"
-              className="h-19 md:h-20 object-contain"
+              className="h-14 md:h-20 object-contain max-w-[160px]"
             />
           </div>
+
+
 
 
           {/* Hamburger Menü (Mobilde Görünür) */}
