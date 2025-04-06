@@ -11,6 +11,8 @@ export default function Projects() {
   const { lang } = useParams(); // 'lang' parametresini al
   const { t, i18n } = useTranslation(); // i18next'i kullan
 
+
+
   useEffect(() => {
     if (lang) {
       i18n.changeLanguage(lang); // Dil değişimini ayarla
@@ -18,18 +20,28 @@ export default function Projects() {
   }, [lang, i18n]);
 
   useEffect(() => {
+    const localeMap = {
+      en: "en-US",
+      tr: "en-US", // Türkçe içerik en-US'ta olduğu için burada da onu kullanıyoruz
+      ar: "ar",
+    };
+  
     const getCategories = async () => {
       try {
-        const fetchedCategories = await fetchMainCategories();
+        const locale = localeMap[lang] || "en-US";
+        const fetchedCategories = await fetchMainCategories(locale);
         setCategories(fetchedCategories);
       } catch (err) {
         console.error("Contentful'dan veriler alınamadı:", err);
-        setError(t("projects.error")); // Hata mesajını dil dosyasından çek
+        setError(t("projects.error"));
       }
     };
-
+  
     getCategories();
-  }, [t]);
+  }, [lang, t]);
+  
+  
+  
 
   return (
     <>
@@ -48,11 +60,11 @@ export default function Projects() {
         {/* Header İçerik */}
         <nav className="absolute top-0 left-0 right-0 z-20 flex justify-between items-center px-6 py-4 md:px-10 bg-black bg-opacity-60">
           {/* Logo */}
-          <div className="md:text-left text-center">
+          <div className="md:text-left text-center h-16 overflow-hidden flex items-center">
             <img
-              src={`${process.env.PUBLIC_URL}/EtaLogo.png`}
+              src={`${process.env.PUBLIC_URL}/Mediamodifier-Design-Template.png`}
               alt="Eta Logo"
-              className="h-12 md:h-16 inline-block"
+              className="h-19 md:h-20 object-contain"
             />
           </div>
 
@@ -173,7 +185,7 @@ export default function Projects() {
             {categories.map((category) => (
               <div
                 key={category.sys.id}
-                className="bg-gray-100 shadow-md p-6 rounded-lg cursor-pointer"
+                className="bg-gray-100 shadow-md p-6 rounded-lg"
                 /*main sub tıklama*/
                 /* onClick={() => navigate(`/${lang}/sub-category/${category.sys.id}`)} */
 
@@ -183,9 +195,13 @@ export default function Projects() {
                   alt={category.fields.main_category_name}
                   className="w-full h-48 object-cover rounded-md mb-4"
                 />
-                <h3 className="text-2xl font-bold mb-2">
-                  {category.fields.main_category_name}
+               <h3 className="text-2xl font-bold mb-2">
+                  {t(`projects.categoriesList.${category.fields.main_category_name}`, {
+                    defaultValue: category.fields.main_category_name
+                  })}
                 </h3>
+
+
               </div>
             ))}
           </div>

@@ -1,24 +1,48 @@
 {
   "header": {
     "home": "ANA SAYFA",
-    "services": "HİZMETLER",
-    "projects": "PROJELER",
+    "services": "HAKKIMIZDA",
+    "projects": "ÜRÜNLER",
     "connect": "İLETİŞİM",
     "description1": "20 yıldır bu sektördeyiz.",
     "description2": "Ürünlerimizi Avrupa ve Orta Doğu'ya ihraç ediyoruz.",
     "follow": "TAKİP EDİN",
     "headquarters": "MERKEZ OFİS",
     "successTitle": "10+ YILLIK BAŞARI",
-    "successDescription": "ORTA DOĞU VE AVRUPA'DAKİ TÜM ÜRÜNLERİN ÖNDE GELEN TEDARİKÇİLERİNDEN BİRİ."
+    "successDescription": "ORTA DOĞU VE AVRUPA'DAKİ TÜM ÜRÜNLERİN ÖNDE GELEN TEDARİKÇİLERİNDEN BİRİ.",
+    "arabicPhoneLabel": "Arapça için",
+    "englishPhoneLabel": "İngilizce için"
   },
 
   "projects": {
     "title": "ÜRÜN KATEGORİLERİ",
     "categories": "Ürün Kategorileri",
-    "error": "Veriler alınırken bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+    "error": "Veriler alınırken bir hata oluştu. Lütfen daha sonra tekrar deneyin.",
+    "categoriesList": {
+      "EV MOBİLYALARI": "EV MOBİLYALARI",
+      "EV TEKSTİLİ": "EV TEKSTİLİ",
+      "İNŞAAT MALZEMELERİ": "İNŞAAT MALZEMELERİ",
+      "PET SHOP ÜRÜNLERİ": "PET SHOP ÜRÜNLERİ",
+      "ARMATÜRLER VE VANALAR": "ARMATÜRLER VE VANALAR",
+      "PLEKSİ TEŞHİR ÜRÜNLERİ": "PLEKSİ TEŞHİR ÜRÜNLERİ",
+      "TARIM EKİPMANLARI VE GÜBRE": "TARIM EKİPMANLARI VE GÜBRE",
+      "OTOMOTİV YEDEK PARÇALARI": "OTOMOTİV YEDEK PARÇALARI",
+      "AKSESUAR VE TAKI": "AKSESUAR VE TAKI",
+      "AMBALAJ ÜRÜNLERİ": "AMBALAJ ÜRÜNLERİ",
+      "TEL ÇİT VE RULO ÇİM": "TEL ÇİT VE RULO ÇİM",
+      "ELEKTRONİK CİHAZLAR": "ELEKTRONİK CİHAZLAR",
+      "AYAKKABI VE ÇANTA": "AYAKKABI VE ÇANTA",
+      "TEKSTİL": "TEKSTİL",
+      "CAM VE PORSELEN ÜRÜNLER": "CAM VE PORSELEN ÜRÜNLER",
+      "KOZMETİK ÜRÜNLER": "KOZMETİK ÜRÜNLER",
+      "TEMİZLİK MALZEMELERİ": "TEMİZLİK MALZEMELERİ",
+      "TOPTAN GIDA": "TOPTAN GIDA",
+      "ÇELİK KAPI": "ÇELİK KAPI",
+      "OFİS MOBİLYALARI": "OFİS MOBİLYALARI"
+    }
   },
 
-  "subcategories":{
+  "subcategories": {
     "title": "ALT KATEGORİLER",
     "error": "Alt kategoriler alınırken bir hata oluştu. Lütfen tekrar deneyin."
   },

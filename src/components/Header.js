@@ -1,3 +1,4 @@
+//src/companents/Header.js
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -36,13 +37,14 @@ export default function Header() {
         {/* Header İçerik */}
         <nav className="absolute top-0 left-0 right-0 z-20 flex justify-between items-center px-6 py-4 md:px-10 bg-black bg-opacity-60">
           {/* Logo */}
-          <div className="md:text-left text-center">
+          <div className="md:text-left text-center h-16 overflow-hidden flex items-center">
             <img
-              src={`${process.env.PUBLIC_URL}/EtaLogo.png`}
+              src={`${process.env.PUBLIC_URL}/Mediamodifier-Design-Template.png`}
               alt="Eta Logo"
-              className="h-12 md:h-16 inline-block"
+              className="h-19 md:h-20 object-contain"
             />
           </div>
+
 
           {/* Hamburger Menü (Mobilde Görünür) */}
           <button
@@ -61,15 +63,16 @@ export default function Header() {
             <li className="hover:text-white cursor-pointer px-6 py-4 border-b border-gray-500 md:border-0 text-left">
               <a href="/header">{t("header.home")}</a>
             </li>
-            <li className="hover:text-white cursor-pointer px-6 py-4 border-b border-gray-500 md:border-0 text-left">
-              {t("header.services")}
-            </li>
             <li
               className="hover:text-white cursor-pointer px-6 py-4 border-b border-gray-500 md:border-0 text-left"
               onClick={() => navigate(`/${lang}/projects`)}
             >
               {t("header.projects")}
             </li>
+            <li className="hover:text-white cursor-pointer px-6 py-4 border-b border-gray-500 md:border-0 text-left">
+              {t("header.services")}
+            </li>
+            
             <li className="hover:text-white cursor-pointer px-6 py-4 border-b border-gray-500 md:border-0 text-left">
               {t("header.connect")}
             </li>
@@ -139,26 +142,41 @@ export default function Header() {
           {/* İletişim Bilgileri */}
           <div className="mt-24">
             <div className="w-full h-0.5 bg-red-500 mb-6"></div>
-            <div className="flex flex-col space-y-4 text-lg items-start md:flex-row md:space-y-0 md:space-x-10 md:items-center md:justify-center">
-              <div className="flex items-center space-x-2">
-                <span className="material-icons text-red-500">location_on</span>
-                <p>Yenimahalle İstanbul Caddesi No:730/A, Istanbul, Turkey</p>
+
+            <div className="flex flex-col gap-y-6 text-lg items-start md:flex-row md:gap-y-0 md:gap-x-20 md:items-start md:justify-center">
+              
+              {/* Konum */}
+              <div className="flex items-start space-x-3 max-w-sm">
+                <span className="material-icons text-red-500 pt-1">location_on</span>
+                <p>
+                  Zafer mah. Adile Naşit blv. No:37/1A No:31<br />
+                  Esenyurt/Istanbul, Turkey
+                </p>
               </div>
-              <div className="flex items-center space-x-2">
-                <span className="material-icons text-red-500">email</span>
+
+              {/* E-posta */}
+              <div className="flex items-start space-x-3">
+                <span className="material-icons text-red-500 pt-1">email</span>
                 <p>info@eta-trade.com</p>
               </div>
-              <div className="flex items-center space-x-2">
-                <span className="material-icons text-red-500">phone</span>
-                <p>+90 (544) 667 41 90</p>
+
+              {/* Telefonlar */}
+              <div className="flex items-start space-x-3">
+                <span className="material-icons text-red-500 pt-1">phone</span>
+                <div className="space-y-1">
+                <p>{t("header.arabicPhoneLabel")}: +90 (530) 109 5465</p>
+                <p>{t("header.englishPhoneLabel")}: +90 (530) 405 6466</p>
+
+                </div>
               </div>
             </div>
           </div>
+
         </div>
 
         {/* WhatsApp Butonu */}
         <a
-          href="https://api.whatsapp.com/send/?phone=905446674190&text&type=phone_number&app_absent=0"
+          href="https://api.whatsapp.com/send/?phone=905304056466&text&type=phone_number&app_absent=0"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 bg-green-500 rounded-full p-4 shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out z-50" // z-index eklendi
@@ -221,7 +239,7 @@ export default function Header() {
               {/* Sosyal Medya İkonları (Mobilde Görünür) */}
               <div className=" md:hidden space-x-6 mt-6 ">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/profile.php?id=61567005059198"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white "
@@ -250,7 +268,7 @@ export default function Header() {
             {/* Sosyal Medya İkonları (Masaüstü için) */}
             <div className="hidden md:flex justify-center md:justify-start items-center space-x-6">
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/profile.php?id=61567005059198"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white"
@@ -278,13 +296,27 @@ export default function Header() {
 
           {/* Diğer Bilgiler */}
           <div className="border-t border-gray-700 pt-10 grid grid-cols-1 md:grid-cols-2 text-sm gap-8">
+          <div>
+            <h3 className="font-extrabold text-red-500 mb-2">{t("header.headquarters")}</h3>
+
+            <div className="mb-4">
+              <p>Zafer mah. Adile Naşit blv. No:37/1A No:31</p>
+              <p>Esenyurt/Istanbul, Turkey</p>
+            </div>
+
+            <div className="mb-4">
+              <p>{t("header.arabicPhoneLabel")}</p>
+              <p>+90 (530) 109 5465</p>
+              <p>{t("header.englishPhoneLabel")}</p>
+              <p>+90 (530) 405 6466</p>
+            </div>
+
+
             <div>
-              <h3 className="font-extrabold text-red-500 mb-2">{t("header.headquarters")}</h3>
-              <p>Yenimahalle İstanbul Caddesi No:730/A</p>
-              <p>Istanbul/Turkey</p>
-              <p>+90 (544) 667 41 90</p>
               <p>info@eta-trade.com</p>
             </div>
+          </div>
+
             <div>
               <h3 className="font-extrabold text-red-500 mb-2">{t("header.successTitle")}</h3>
               <p>{t("header.successDescription")}</p>

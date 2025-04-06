@@ -5,10 +5,12 @@ const client = createClient({
   accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
 });
 
-export const fetchMainCategories = async () => {
+// contentfulClient.js
+export const fetchMainCategories = async (locale = "en-US") => {
   try {
     const response = await client.getEntries({
-      content_type: "mainCategory", // Main Category'nin Contentful'daki ID'si
+      content_type: "mainCategory",
+      locale, // seçilen dilde veriyi getir
     });
     return response.items;
   } catch (error) {
@@ -16,6 +18,9 @@ export const fetchMainCategories = async () => {
     throw error;
   }
 };
+
+
+
 
 export const fetchSubCategories = async (mainCategoryId) => {
     try {

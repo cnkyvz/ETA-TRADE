@@ -1,24 +1,49 @@
 {
   "header": {
     "home": "HOME",
-    "services": "SERVICES",
-    "projects": "PROJECTS",
-    "connect": "CONNECT",
+    "services": "ABOUT US",
+    "projects": "PRODUCTS",
+    "connect": "CONTACT",
     "description1": "We have been in this industry for 20 years.",
     "description2": "We export products to Europe and the Middle East.",
     "follow": "FOLLOW",
     "headquarters": "HEADQUARTERS",
     "successTitle": "10+ YEARS OF SUCCESS",
-    "successDescription": "ONE OF THE LEADING SUPPLIERS OF ALL PRODUCTS IN THE MIDDLE EAST AND EUROPE."
+    "successDescription": "ONE OF THE LEADING SUPPLIERS OF ALL PRODUCTS IN THE MIDDLE EAST AND EUROPE.",
+    "arabicPhoneLabel": "For Arabic",
+    "englishPhoneLabel": "For English"
+    
   },
-  
+
   "projects": {
     "title": "PRODUCT CATEGORIES",
     "categories": "Product Categories",
-    "error": "Failed to fetch data. Please try again later."
+    "error": "Failed to fetch data. Please try again later.",
+    "categoriesList": {
+      "EV MOBİLYALARI": "HOME FURNITURE",
+      "EV TEKSTİLİ": "HOME TEXTILE",
+      "İNŞAAT MALZEMELERİ": "CONSTRUCTION MATERIALS",
+      "PET SHOP ÜRÜNLERİ": "PET SHOP PRODUCTS",
+      "ARMATÜRLER VE VANALAR": "FAUCETS AND VALVES",
+      "PLEKSİ TEŞHİR ÜRÜNLERİ": "PLEXI DISPLAY PRODUCTS",
+      "TARIM EKİPMANLARI VE GÜBRE": "AGRICULTURAL EQUIPMENT AND FERTILIZER",
+      "OTOMOTİV YEDEK PARÇALARI": "AUTOMOTIVE SPARE PARTS",
+      "AKSESUAR VE TAKI": "ACCESSORIES AND JEWELRY",
+      "AMBALAJ ÜRÜNLERİ": "PACKAGING PRODUCTS",
+      "TEL ÇİT VE RULO ÇİM": "WIRE FENCE AND ROLL GRASS",
+      "ELEKTRONİK CİHAZLAR": "ELECTRONIC DEVICES",
+      "AYAKKABI VE ÇANTA": "SHOES AND BAGS",
+      "TEKSTİL": "TEXTILE",
+      "CAM VE PORSELEN ÜRÜNLER": "GLASS AND PORCELAIN PRODUCTS",
+      "KOZMETİK ÜRÜNLER": "COSMETIC PRODUCTS",
+      "TEMİZLİK MALZEMELERİ": "CLEANING MATERIALS",
+      "TOPTAN GIDA": "WHOLESALE FOOD",
+      "ÇELİK KAPI": "STEEL DOOR",
+      "OFİS MOBİLYALARI": "OFFICE FURNITURE"
+    }
   },
 
-  "subcategories":{
+  "subcategories": {
     "title": "SUB CATEGORIES",
     "error": "Failed to fetch subcategories. Please try again."
   },

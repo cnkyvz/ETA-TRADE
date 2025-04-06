@@ -1,3 +1,4 @@
+//src/companents/Products.js
 import React, { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { fetchProducts } from "../contentfulClient";
@@ -15,16 +16,17 @@ const Products = () => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const fetchedProducts = await fetchProducts(id); // Sub Category ID'yi kullan
-        setProducts(fetchedProducts); // Gelen ürünleri state'e kaydet
+        const fetchedProducts = await fetchProducts(id, lang); // lang'i ekledik
+        setProducts(fetchedProducts);
       } catch (error) {
         console.error("Ürünler alınamadı:", error);
         setError(t("products.error"));
       }
     };
-
-    getProducts(); // Ürünleri almak için fonksiyonu çağır
-  }, [id, t]);
+  
+    getProducts();
+  }, [id, lang, t]); // lang de dependency olarak eklendi
+  
 
   const handleLanguageChange = (selectedLang) => {
     i18n.changeLanguage(selectedLang);
@@ -48,11 +50,11 @@ const Products = () => {
         {/* Header İçerik */}
         <nav className="absolute top-0 left-0 right-0 z-20 flex justify-between items-center px-6 py-4 md:px-10 bg-black bg-opacity-60">
           {/* Logo */}
-          <div className="md:text-left text-center">
+          <div className="md:text-left text-center h-16 overflow-hidden flex items-center">
             <img
-              src={`${process.env.PUBLIC_URL}/EtaLogo.png`}
+              src={`${process.env.PUBLIC_URL}/Mediamodifier-Design-Template.png`}
               alt="Eta Logo"
-              className="h-12 md:h-16 inline-block"
+              className="h-19 md:h-20 object-contain"
             />
           </div>
 
@@ -145,7 +147,7 @@ const Products = () => {
 
         {/* WhatsApp Butonu */}
         <a
-          href="https://api.whatsapp.com/send/?phone=905446674190&text&type=phone_number&app_absent=0"
+          href="https://api.whatsapp.com/send/?phone=905304056466&text&type=phone_number&app_absent=0"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 bg-green-500 rounded-full p-4 shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out z-50"

@@ -1,32 +1,57 @@
 {
   "header": {
     "home": "الرئيسية",
-    "services": "الخدمات",
-    "projects": "المشاريع",
-    "connect": "تواصل",
+    "services": "معلومات عنا",
+    "projects": "منتجات",
+    "connect": "اتصل بنا",
     "description1": "لدينا 20 عامًا من الخبرة في هذا المجال.",
     "description2": "نصدر منتجاتنا إلى أوروبا والشرق الأوسط.",
     "follow": "تابعنا",
     "headquarters": "المقر الرئيسي",
     "successTitle": "10+ سنوات من النجاح",
-    "successDescription": "أحد الموردين الرائدين لجميع المنتجات في الشرق الأوسط وأوروبا."
+    "successDescription": "أحد الموردين الرائدين لجميع المنتجات في الشرق الأوسط وأوروبا.",
+    "arabicPhoneLabel": "للغة العربية",
+    "englishPhoneLabel": "للغة الإنجليزية"
+
   },
 
-    "projects": {
-      "title": "فئات المنتجات",
-      "categories": "فئات المنتجات",
-      "error": "فشل في جلب البيانات. يرجى المحاولة مرة أخرى لاحقًا."
-    },
-
-    "subcategories":{
-      "title": "الفئات الفرعية",
-      "error": "فشل في جلب الفئات الفرعية. يرجى المحاولة مرة أخرى."
-    },
-
-    "products": {
-      "title": "المنتجات",
-      "error": "فشل في جلب المنتجات. يرجى المحاولة مرة أخرى.",
-      "noImage": "لا صورة",
-      "noName": "لا اسم"
+  "projects": {
+    "title": "فئات المنتجات",
+    "categories": "فئات المنتجات",
+    "error": "فشل في جلب البيانات. يرجى المحاولة مرة أخرى لاحقًا.",
+    "categoriesList": {
+      "EV MOBİLYALARI": "أثاث المنزل",
+      "EV TEKSTİLİ": "المنسوجات المنزلية",
+      "İNŞAAT MALZEMELERİ": "مواد البناء",
+      "PET SHOP ÜRÜNLERİ": "منتجات الحيوانات الأليفة",
+      "ARMATÜRLER VE VANALAR": "الحنفيات والصمامات",
+      "PLEKSİ TEŞHİR ÜRÜNLERİ": "منتجات العرض من الأكريليك",
+      "TARIM EKİPMANLARI VE GÜBRE": "معدات الزراعة والأسمدة",
+      "OTOMOTİV YEDEK PARÇALARI": "قطع غيار السيارات",
+      "AKSESUAR VE TAKI": "إكسسوارات ومجوهرات",
+      "AMBALAJ ÜRÜNLERİ": "منتجات التعبئة والتغليف",
+      "TEL ÇİT VE RULO ÇİM": "سياج سلكي وعشب ملفوف",
+      "ELEKTRONİK CİHAZLAR": "الأجهزة الإلكترونية",
+      "AYAKKABI VE ÇANTA": "أحذية وحقائب",
+      "TEKSTİL": "المنسوجات",
+      "CAM VE PORSELEN ÜRÜNLER": "منتجات الزجاج والبورسلين",
+      "KOZMETİK ÜRÜNLER": "منتجات التجميل",
+      "TEMİZLİK MALZEMELERİ": "مواد التنظيف",
+      "TOPTAN GIDA": "المنتجات الغذائية بالجملة",
+      "ÇELİK KAPI": "أبواب فولاذية",
+      "OFİS MOBİLYALARI": "أثاث المكاتب"
     }
+  },
+
+  "subcategories": {
+    "title": "الفئات الفرعية",
+    "error": "فشل في جلب الفئات الفرعية. يرجى المحاولة مرة أخرى."
+  },
+
+  "products": {
+    "title": "المنتجات",
+    "error": "فشل في جلب المنتجات. يرجى المحاولة مرة أخرى.",
+    "noImage": "لا صورة",
+    "noName": "لا اسم"
+  }
 }
