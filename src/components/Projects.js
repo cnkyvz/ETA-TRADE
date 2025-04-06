@@ -11,6 +11,8 @@ export default function Projects() {
   const { lang } = useParams(); // 'lang' parametresini al
   const { t, i18n } = useTranslation(); // i18next'i kullan
 
+  
+
 
 
   useEffect(() => {
@@ -48,12 +50,15 @@ export default function Projects() {
       <header className="relative h-screen">
         {/* Video Arka Plan */}
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="bg-video absolute inset-0 w-full h-full object-cover"
           src={`${process.env.PUBLIC_URL}/EtaHeaderVideo2.mp4`}
           autoPlay
           loop
           muted
-        ></video>
+          playsInline
+          preload="auto"
+        />
+
 
         {/* Transparan Siyah Katman */}
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
@@ -173,6 +178,26 @@ export default function Projects() {
             className="w-8 h-8"
           />
         </a>
+        <style>
+        {`
+          @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+              transform: translateY(0);
+            }
+            40% {
+              transform: translateY(-10px);
+            }
+            60% {
+              transform: translateY(-5px);
+            }
+          }
+
+          video.bg-video {
+            pointer-events: none !important;
+            user-select: none !important;
+          }
+        `}
+      </style>
       </header>
 
       {/* Kategoriler */}

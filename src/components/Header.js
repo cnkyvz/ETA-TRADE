@@ -19,18 +19,21 @@ export default function Header() {
     navigate(`/${selectedLang}`);
   };
 
+  
+
   return (
     <>
       <header className="relative h-screen">
         {/* Video Arka Plan */}
         <video
-          className="absolute inset-0 w-full h-full object-cover"
+          className="bg-video absolute inset-0 w-full h-full object-cover"
           src={`${process.env.PUBLIC_URL}/EtaHeaderVideo2.mp4`}
           autoPlay
           loop
           muted
-        ></video>
-
+          playsInline
+          preload="auto"
+        />
 
         {/* Transparan Siyah Katman */}
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
@@ -208,6 +211,11 @@ export default function Header() {
                 transform: translateY(-5px);
               }
             }
+              
+            video.bg-video {
+            pointer-events: none !important;
+            user-select: none !important;
+          }
           `}
         </style>
 
